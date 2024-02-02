@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilhete para meu amorzinho</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #cce5ff, #ff99cc); /* Degradê de azul para rosa */
+            color: #333; /* Cor do texto */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4d94ff; /* Azul mais intenso no topo */
+            text-align: center;
+            padding: 20px;
+        }
+
+        #handwritten-text {
+            font-size: 18px;
+            text-align: center;
+            margin: 30px;
+            position: relative;
+        }
+
+        #enigma {
+            margin: 30px;
+        }
+
+        .flower {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #ff99cc; /* Cor das flores (rosa) */
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            animation: float 5s linear infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Um bilhete para o meu amorzinho S2</h1>
+    </header>
+
+    <div id="handwritten-text">
+        <p>Um enigma que somente um elefantinho pode desvendar, você está preparada?</p>
+        <p>Parte 1 - Este bilhete está amarrado em algo temos em comum, mas pense no oposto dela, no antônimo que também é primário, se descobriu guarde ela e coloque no final.</p>
+        <p>Eu no papel, você na tela, Ficamos fascinados por algo que foi um estudo profundo. Uma grata surpresa que renderam boas conversas, não foi simplesmente algo elementar... ora! Foi diferente, afinal em toda minha vida até aqui eu só tenho uns sete (este foi o meu primeiro, e ele curiosamente foi o primeiro cronologicamente).</p>
+        <p>Se conseguir encontrá-lo, ele estará no topo, primeiro de todos. Dentro, você encontrará a primeira parte do bilhete.</p>
+        <p>Mas onde? Você só precisa elevar a sua vontade de desvendar esse mistério a nonagésima sexta potencial, e lá estará! Quando chegar neste nível de vontade! Conte até 24, sempre progredindo. Então observe o que está de um ponto ao outro.</p>
+
+        <div id="enigma">
+            <p>Para a segunda parte, você precisa ver e ouvir. Se você quisesse acompanhar loucuras semelhantes às que acontecem no seu trabalho, onde você iria?</p>
+            <p>Eu queria estar ao seu lado para observar o TUDUM! Do seu coração quando você descobrir.</p>
+            <p>Então precisaria de, sei lá, 6 temporais com toda água que caberia em Niagara 2 vezes! Para conter sua euforia. E nesse momento, só lá por volta de uns 20 minutos, ou talvez 20 minutos e 1 segundo (rs) você finalmente conseguiria compreender a outra parte do que quero te dizer.</p>
+        </div>
+
+        <!-- Flores no fundo -->
+        <div class="flower" style="top: 30%; left: 30%;"></div>
+        <div class="flower" style="top: 50%; left: 70%;"></div>
+        <div class="flower" style="top: 70%; left: 10%;"></div>
+    </div>
+</body>
+</html>
